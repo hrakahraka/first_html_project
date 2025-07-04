@@ -8,6 +8,8 @@ p{
     display: inline-block;
     width: 300px;
     height: 200px;
+    margin-right: 12px;
+    cursor: pointer;
 }
 .thumbnail{
     width: 300px; ;
