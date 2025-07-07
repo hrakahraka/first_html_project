@@ -1,11 +1,11 @@
 .header{
     display: flex;
     flex-direction: row;
-    height: 51px;
+    height: 55px;
     margin-bottom: 25px;
     box-shadow: 0.5px 0px 5px rgba(0,0,0, 0.5);
     justify-content: space-between;
-    padding-top: 7px;
+    align-items: center;
 }
 .header-right{
     display: flex;
@@ -13,27 +13,25 @@
     margin-right: 24px;
     margin-left: 29px;
     gap: 26px;
-    height: 32px;
-    padding-top: 5px;
+    align-items: center;
 }
 .profile-image{
     width: 32px;
     border-radius: 16px;
+    cursor: pointer;
 }
 .header-left{
     display: flex;
     flex-direction: row;
-    height: 24px;
-    padding-top: 9px;
-    width: 162px;
+    align-items: center;
 }
 .header-middle{
     display: flex;
     flex-direction: row;
     margin-left: 60px;
     flex: 1;
-    max-width: 400px;
-    padding-top: 1px;
+    max-width: 470px;
+    align-items: center;
 }
 input{
     width: 100%;
@@ -62,6 +60,7 @@ input:focus{
     margin-left: 1px;
     background-color: rgb(247, 247, 247);
     transition: background-color 0.15s;
+    cursor: pointer;
 }
 .search-button:hover{
     background-color:rgb(207, 207, 207) ;
@@ -73,27 +72,31 @@ input:focus{
     width: 24px;
 }
 .voice-search-button{
-    width: 55px;
-    border-radius: 30px;
-    border:none ;
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
     margin-left: 8px;
     background-color: rgb(247, 247, 247);
-    margin-bottom: 10px;
-    margin-top:2px ;
+    cursor: pointer;
 }
 .voice-search-icon{
-   width: 24px;
+    width: 24px;
 }
 .right-image{
     width: 24px;
+    cursor: pointer;
 }
 .ham-image{
     width: 24px;
     margin-right: 24px;
     margin-left: 24px;
+    cursor: pointer;
 }
 .youtube-logo{
     width: 90px;
+    cursor: pointer;
 }
 body{
     margin: 0px;
