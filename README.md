@@ -1,56 +1,29 @@
-# 📺 YouTube Clone (HTML/CSS)
+# YouTube Clone
 
-A simple static clone of the YouTube homepage built with HTML and CSS.  
-This project demonstrates basic web layout techniques, including display properties, nested layouts, and the use of custom fonts.
+This project is a simple YouTube homepage clone built with HTML and CSS. It demonstrates a responsive layout, modern UI elements, and grid-based video previews.
 
----
+## Features
 
-## 🚀 Features
+- **Header Navigation:** Includes YouTube logo, search bar, voice search, and quick access icons for upload, apps, notifications, and profile.
+- **Sidebar:** Quick navigation buttons for Home, Explore, Subscriptions, Originals, YouTube Music, and Library.
+- **Video Grid:** Responsive grid layout displaying video thumbnails, channel images, titles, and stats.
+- **Tooltips:** Interactive tooltips on header icons for better user experience.
+- **Responsive Design:** Adapts to different screen sizes using CSS media queries.
+- **Footer:** Credits and educational disclaimer.
 
-- Responsive video card layout using `inline-block`
-- Custom fonts via Google Fonts (Roboto)
-- Channel images and video thumbnails
-- Clean, modern CSS styling
-- No JavaScript — pure HTML & CSS
+## Screenshot
 
----
+Below is a preview of the homepage layout:
 
-## 📂 Project Structure
+![Screenshot of the YouTube Clone homepage](Screenshot.png)
 
-```
-first_html_project/
-├── youtube.html         # Main HTML file
-├── youtube.css          # Stylesheet
-├── youtube_images/      # Thumbnails and channel images
-└── README.md            # Project documentation
-```
+## How to Run
 
----
+1. Clone or download the repository.
+2. Open `youtube.html` in your browser.
+3. All images and styles are included locally; no additional setup required.
 
-## 🛠️ Skills Practiced
+## Credits
 
-- HTML5 semantic structure
-- CSS display properties (`inline-block`, `block`)
-- Margin, padding, and box model
-- Font embedding with Google Fonts
-- Image styling and layout
-
----
-
-## 💻 Usage
-
-1. Clone or download this repository.
-2. Open `youtube.html` in your web browser.
-
----
-
-## 📸 Screenshot
-
-![YouTube Clone Screenshot](youtube_images/thumbnail-1.webp)
-
----
-
-## 📝 Notes
-
-- This project is for educational purposes only and does not include any backend or interactive features.
-- All images are for demonstration only.
+Created by Hamdi Hraka  
+For Educational Purposes Only
