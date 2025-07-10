@@ -1,11 +1,16 @@
 .header{
     display: flex;
     flex-direction: row;
-    height: 55px;
-    margin-bottom: 25px;
+    height: 56px;
+    margin-bottom: 20px;
     box-shadow: 0.5px 0px 5px rgba(0,0,0, 0.5);
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .header-right{
     display: flex;
@@ -34,24 +39,31 @@
     align-items: center;
 }
 input{
-    width: 100%;
-    height: 36px;
+    flex: 1;
+    height: 34px;
     border-style: solid;
     border-width: 1px;
     border-color:rgb(204, 204, 204);
-    font-family: roboto, Arial;
-    font-weight: 400;
-    font-size: 17px;
-    color:rgb(204, 204, 204) ;
-    padding-left: 10px;
+    padding-left: 12px;
+    padding-top: 3px;
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: inset 0.5px 0.5px 1px rgba(0,0,0, 0.15);
+    width: 0px;
 }
+   
 input:focus{
     outline-style: solid;
     outline-color: blue;
     outline-width: 1px;
 }
+input::placeholder{
+    font-family: roboto, Arial;
+    font-weight: 400;
+    font-size: 16px;
+}
 .search-button{
-    width: 85px;
+    width: 63px;
     height: 40px;
     border-style: solid;
     border-width: 1px;
@@ -70,14 +82,15 @@ input:focus{
 }
 .search-image{
     width: 24px;
+    margin-top: 3px;
 }
 .voice-search-button{
-    max-width: 40px;
-    min-width: 40px;
+    width: 40px;
     height: 40px;
     border: none;
     border-radius: 40px;
     margin-left: 8px;
+    margin-top: 3px;
     background-color: rgb(247, 247, 247);
     cursor: pointer;
 }
@@ -98,8 +111,41 @@ input:focus{
     width: 90px;
     cursor: pointer;
 }
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    width: 72px;
+    background-color: white;
+    padding-top: 4px;
+}
+.side-button{
+    border: none;
+    background-color: white;
+    height: 73px;
+    cursor: pointer;
+}
+.side-button:hover{
+    background-color: rgb(226, 221, 221);
+}
+.side-image{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+.side-text{
+    font-family:roboto, Arial ;
+    font-size: 10px;
+}
 body{
     margin: 0px;
+    background-color: rgb(252, 252, 252);
+    padding-top: 77px;
+    padding-left: 92px;
+    padding-right: 20px;
 }
 p{
     margin: 0px;
