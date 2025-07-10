@@ -141,6 +141,7 @@ input::placeholder{
     width: 72px;
     background-color: white;
     padding-top: 4px;
+    z-index: 100;
 }
 .side-button{
     border: none;
