@@ -8,25 +8,34 @@
         <link rel="stylesheet" href="youtube.css">
     </head>
     <body style="padding-bottom: 20px;">
-        <div class="header">
+        <header class="header">
             <div class="header-left">
                 <img src="youtube_images/hamburger-menu.svg" class="ham-image">
                 <img src="youtube_images/youtube-logo.svg" class="youtube-logo">
             </div>
             <div class="header-middle">
                 <input type="text" placeholder="Search">
-                <button class="search-button"><img src="youtube_images/search.svg" class="search-image"></button>
-                <button class="voice-search-button"><img src="youtube_images/voice-search-icon.svg" class="voice-search-icon"></button>
+                <button class="search-button"><img src="youtube_images/search.svg" class="search-image"><div class="tooltip">Search</div></button>
+                <button class="voice-search-button"><img src="youtube_images/voice-search-icon.svg" class="voice-search-icon"><div class="tooltip">Search with your voice</div></button>
             </div>
             <div class="header-right">
-                <img class="right-image" src="youtube_images/upload.svg">
-                <img class="right-image" src="youtube_images/youtube-apps.svg">
-                <img src="youtube_images/notifications.svg" class="right-image">
+                <div class="right-image-container">
+                    <img class="right-image" src="youtube_images/upload.svg">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="right-image-container">
+                    <img class="right-image" src="youtube_images/youtube-apps.svg">
+                    <div class="tooltip">YouTube Apps</div>
+                </div>
+                <div class="right-image-container">
+                    <img src="youtube_images/notifications.svg" class="right-image">
+                    <div class="tooltip">notifications</div>
+                </div>
                 <img src="youtube_images/profile.jpg" class="profile-image">
                 <div class="notification-count">3</div>
             </div>
-        </div>
-        <div class="side-bar">
+        </header>
+        <nav class="side-bar">
             <button class="side-button">
                 <img class="side-image" src="youtube_images/home.svg">
                 <p class="side-text">Home</p>
@@ -51,210 +60,216 @@
                 <img class="side-image" src="youtube_images/library.svg">
                 <p class="side-text">Library</p>
             </button>
-        </div>
-        <div class="page-grid">
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-1.webp">
-                    <div class="video-time">14:20</div>
-                </div>
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-1.jpeg">
+        </nav>
+        <main>
+            <section class="page-grid">
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-1.webp">
+                        <div class="video-time">14:20</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                        <p class="stats">Marques Brownlee</p>
-                        <p class="stats">3.4M views · 6 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-2.webp">
-                    <div class="video-time">8:22</div>
-                </div>
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-2.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Try Not To Laugh Challenge #9</p>
-                        <p class="stats">Marques Brownlee</p>
-                        <p class="stats">19M views · 4 years ago</p>
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-1.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                            <p class="stats">Marques Brownlee</p>
+                            <p class="stats">3.4M views · 6 months ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-3.webp">
-                    <div class="video-time">9:13</div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-2.webp">
+                        <div class="video-time">8:22</div>
+                    </div>
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-2.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Try Not To Laugh Challenge #9</p>
+                            <p class="stats">Marques Brownlee</p>
+                            <p class="stats">19M views · 4 years ago</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-3.webp">
+                        <div class="video-time">9:13</div>
+                    </div>
+                    
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-3.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
+                            <p class="stats">SSSniperWolf</p>
+                            <p class="stats">12M views · 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-4.webp">
+                        <div class="video-time">22:09</div>
+                    </div>
+                    
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-4.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                            <p class="stats">Veritasium</p>
+                            <p class="stats">18M views · 4 months ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-5.webp">
+                        <div class="video-time">11:17</div>
+                    </div>
+                    
+                    <div class="subimage-grid" >
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-5.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                            <p class="stats">CS Dojo</p>
+                            <p class="stats">519K views · 5 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-6.webp">
+                        <div class="video-time">19:59</div>
+                    </div>
+                    
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-6.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                            <p class="stats">MrBeast</p>
+                            <p class="stats">141M views · 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-7.webp">
+                        <div class="video-time">10:13</div>
+                    </div>
+                    
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-7.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Why Planes Don't Fly Over Tibet</p>
+                            <p class="stats">RealLifeLore</p>
+                            <p class="stats">6.6M views · 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-8.webp">
+                        <div class="video-time">7:12</div>
+                    </div>
+                    
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-8.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Inside The World's Biggest Passenger Plane</p>
+                            <p class="stats">Tech Vision</p>
+                            <p class="stats">3.7M views · 10 months ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-9.webp">
+                        <div class="video-time">13:17</div>
+                    </div>
+                    
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-9.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">The SECRET to Super Human STRENGTH</p>
+                            <p class="stats">ThenX</p>
+                            <p class="stats">20M views · 3 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-10.webp">
+                        <div class="video-time">7:53</div>
+                    </div>
                 
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-3.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
-                        <p class="stats">SSSniperWolf</p>
-                        <p class="stats">12M views · 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-4.webp">
-                    <div class="video-time">22:09</div>
-                </div>
-                
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-4.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
-                        <p class="stats">Veritasium</p>
-                        <p class="stats">18M views · 4 months ago</p>
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-10.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+                            <p class="stats">Business Insider</p>
+                            <p class="stats">14M views · 1 year ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-5.webp">
-                    <div class="video-time">11:17</div>
-                </div>
-                
-                <div class="subimage-grid" >
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-5.jpeg">
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-11.webp">
+                        <div class="video-time">4:10</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
-                        <p class="stats">CS Dojo</p>
-                        <p class="stats">519K views · 5 years ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-6.webp">
-                    <div class="video-time">19:59</div>
-                </div>
-                
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-6.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Anything You Can Fit In The Circle I'll Pay For</p>
-                        <p class="stats">MrBeast</p>
-                        <p class="stats">141M views · 1 year ago</p>
+                    
+                    <div class="subimage-grid" >
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-11.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+                            <p class="stats">Destination Tips</p>
+                            <p class="stats">3M views · 1 year ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-7.webp">
-                    <div class="video-time">10:13</div>
-                </div>
-                
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-7.jpeg">
+                <div class="box">
+                    <div class="video-image">
+                        <img style="width: 100%;" src="youtube_images/thumbnail-12.webp">
+                        <div class="video-time">4:51</div>
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">Why Planes Don't Fly Over Tibet</p>
-                        <p class="stats">RealLifeLore</p>
-                        <p class="stats">6.6M views · 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-8.webp">
-                    <div class="video-time">7:12</div>
-                </div>
-                
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-8.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Inside The World's Biggest Passenger Plane</p>
-                        <p class="stats">Tech Vision</p>
-                        <p class="stats">3.7M views · 10 months ago</p>
+                    
+                    <div class="subimage-grid">
+                        <div>
+                            <img class="channel-image" src="youtube_images/channel-12.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">What would happen if you didn't drink water? - Mia Nacamulli</p>
+                            <p class="stats">TED-Ed</p>
+                            <p class="stats">12M views · 5 years ago</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-9.webp">
-                    <div class="video-time">13:17</div>
-                </div>
-                
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-9.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">The SECRET to Super Human STRENGTH</p>
-                        <p class="stats">ThenX</p>
-                        <p class="stats">20M views · 3 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-10.webp">
-                    <div class="video-time">7:53</div>
-                </div>
-               
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-10.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
-                        <p class="stats">Business Insider</p>
-                        <p class="stats">14M views · 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-11.webp">
-                    <div class="video-time">4:10</div>
-                </div>
-                
-                <div class="subimage-grid" >
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-11.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
-                        <p class="stats">Destination Tips</p>
-                        <p class="stats">3M views · 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="video-image">
-                    <img style="width: 100%;" src="youtube_images/thumbnail-12.webp">
-                    <div class="video-time">4:51</div>
-                </div>
-                
-                <div class="subimage-grid">
-                    <div>
-                        <img class="channel-image" src="youtube_images/channel-12.jpeg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">What would happen if you didn't drink water? - Mia Nacamulli</p>
-                        <p class="stats">TED-Ed</p>
-                        <p class="stats">12M views · 5 years ago</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
+            <div class="end-line">
+                <p>By Hamdi Hraka</p>
+                <p>For Educational Purposes Only</p>
+            </div> 
+        </main>
     </body>
 </html>

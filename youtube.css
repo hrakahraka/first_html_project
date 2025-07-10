@@ -83,6 +83,9 @@ input::placeholder{
     font-size: 16px;
 }
 .search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 63px;
     height: 40px;
     border-style: solid;
@@ -93,6 +96,24 @@ input::placeholder{
     background-color: rgb(247, 247, 247);
     transition: background-color 0.15s;
     cursor: pointer;
+    position: relative;
+}
+.search-button .tooltip, .voice-search-button .tooltip, .right-image-container .tooltip{
+    position: absolute;
+    white-space: nowrap;
+    background-color: rgb(175, 175, 175);
+    color: white;
+    bottom: -35px;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: roboto, Arial;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    font-size: 12px;
+}
+.search-button:hover .tooltip, .voice-search-button:hover .tooltip, .right-image-container:hover .tooltip{
+    opacity: 1;
 }
 .search-button:hover{
     background-color:rgb(207, 207, 207) ;
@@ -102,9 +123,12 @@ input::placeholder{
 }
 .search-image{
     width: 24px;
-    margin-top: 3px;
 }
 .voice-search-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     width: 40px;
     height: 40px;
     border: none;
@@ -113,6 +137,7 @@ input::placeholder{
     margin-top: 3px;
     background-color: rgb(247, 247, 247);
     cursor: pointer;
+    margin-bottom: 4px;
 }
 .voice-search-icon{
     width: 24px;
@@ -120,6 +145,12 @@ input::placeholder{
 .right-image{
     width: 24px;
     cursor: pointer;
+}
+.right-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .ham-image{
     width: 24px;
@@ -214,9 +245,31 @@ p{
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 16px;
     column-gap: 30px;
+    margin-bottom: 100px;
+}
+@media (max-width: 750px){
+    .page-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+    .page-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .page-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 .subimage-grid{
     display: grid;
     grid-template-columns: 36px 1fr;
     column-gap: 15px;
+}
+.end-line{
+    font-family: roboto, Arial;
+    font-size: 20px;
+    text-align: center;
+    color: gray;
 }
