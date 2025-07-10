@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 .header-right{
     display: flex;
@@ -24,6 +25,24 @@
     width: 32px;
     border-radius: 16px;
     cursor: pointer;
+}
+.notification-count{
+    position: absolute;
+    background-color: rgb(204, 4, 4);
+    color: white;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    width: 16px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    font-size: 11px;
+    font-family: roboto, Arial;
+    text-align: center;
+    z-index: 1;
+    top: 13px;
+    right: 75px;
 }
 .header-left{
     display: flex;
@@ -152,6 +171,22 @@ p{
 }
 .box{
     cursor: pointer;
+}
+.video-image{
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-family: roboto, Arial;
+    font-weight: 600;
+    font-size: 12px;
+    right: 5px;
+    bottom: 10px;
+    opacity: 0.9;
 }
 .channel-image{
     width: 100%;
