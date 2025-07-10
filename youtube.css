@@ -20,6 +20,7 @@
     margin-left: 29px;
     gap: 26px;
     align-items: center;
+    position: relative;
 }
 .profile-image{
     width: 32px;
@@ -41,8 +42,8 @@
     font-family: roboto, Arial;
     text-align: center;
     z-index: 1;
-    top: 13px;
-    right: 75px;
+    top: 1px;
+    right: 51px;
 }
 .header-left{
     display: flex;
@@ -180,6 +181,7 @@ p{
     background-color: black;
     color: white;
     padding: 5px;
+    border-radius: 2px;
     text-align: center;
     font-family: roboto, Arial;
     font-weight: 600;
